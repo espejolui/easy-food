@@ -1,1 +1,33 @@
+.main{
+    width: 100%;
+}
 
+/* No cambiar esto es el formato de los contenedores */
+.container{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Esta es la cabecera que trabaja, Julian, Victor y Camilo */
+.header{
+    /* Quitar color apenas termienen la configuración de estilos para la cabcera */
+    background-color: var(--green);
+}
+
+/* Aquí Ajejandra debe ingresar toddos los estilos de su parte */
+.container.recetas{
+    display: grid;
+    background-color: violet;
+}
+
+.recetasArticle{
+    display: flex;
+}
+
+.imgRecetas{
+    width: 20%;
+}

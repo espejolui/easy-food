@@ -1,0 +1,128 @@
+/* ==================== Import fonts ==================== */
+@font-face {
+    font-family: 'parrafo';
+    src: url(/fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url(/fonts/Montserrat/Montserrat-Black.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables */
+:root {
+    --black: #242424;
+    --white: #FFF;
+    --box: #EEF2ED;
+    --orange: #FF3131;
+    --green: #32DA43;
+    --fontParrafo: 'parrafo';
+    --fontTitle: 'title';
+}
+
+/* Color de selección del contenido */
+::selection {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+/* Quitando espacios internos y externos de manera global */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* Estilos cuerpo */
+body {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 100%;
+    font-family: var(--fontParrafo);
+    color: var(--white);
+    background-color: var(--black);
+}
+
+/* Etiquetas a en block */
+a {
+    display: block;
+}
+
+/* Listas sin marcador */
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* Quitando decoración de alguanas etiquetas */
+p,
+a,
+i,
+b,
+u,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+strong,
+blockquote {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Quitando estilos a los svg */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/* Quitando estilos a las citaciones */
+q:after,
+q:before,
+blockquote:after,
+blockquote::before {
+    content: '';
+    content: none;
+}
+
+/* Tipos de imagenes cubriendo todo el contenedor */
+img,
+video,
+iframe,
+figure,
+picture {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Estilos para formularios */
+form,
+input,
+label,
+select,
+button,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+    appearance: none;
+}
