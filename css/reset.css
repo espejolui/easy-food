@@ -20,6 +20,8 @@
     --box: #EEF2ED;
     --orange: #FF3131;
     --green: #32DA43;
+    --shadow3: rgba(0, 0, 0, 0.3);
+    --shadow7: rgba(0, 0, 0, 0.7);
     --fontParrafo: 'parrafo';
     --fontTitle: 'title';
 }

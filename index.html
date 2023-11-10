@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easy Food</title>
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <script async defer src="js/main.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="main">
-        <header class="container header">
-            <h1>aquí va el menú de Victor y Camilo</h1>
-            <p>Tambien va el input para buscar de Julian</p>
-        </header>
+      <header class="container header">
+        <h1>Easy Food</h1>
+        <p>aquí va el menú de Victor y Camilo
+            Tambien va el input para buscar de Julian
+        </p>
 
-        <section class="container recetas">
+        <!-- Funcionalidad para botón de inicio de sesión -->
+        <form action="" class="formLoging">
+            <input type="text" placeholder="Usuario">
+            <input type="text" placeholder="Contraseña">
+            <button type="submit" id="entrarAhora">Entrar ahora</button>
+        </form>
 
-            <aside class="recetasArticle">
-                <img class="imgRecetas" src="/img/arrozConPollo.jpg" alt="Arroz con pollo">
+        <aside class="buttonsContainer">
+          <button type="button" class="login">Entrar</button>
+          <button type="button" class="signUp">Registrarse</button>
+        </aside>
+      </header>
 
-                <article>
-                    <h2>Receta 1</h2>
-                    <p>Descripción de la receta</p>
-                </article>
-            </aside>
+      <section class="container recetas">
+        <aside class="recetasArticle">
+          <img
+            class="imgRecetas"
+            src="/img/arrozConPollo.jpg"
+            alt="Arroz con pollo"
+          />
 
-            <aside class="recetasArticle">
-                <img class="imgRecetas" src="/img/arrozConPollo.jpg" alt="Arroz con pollo">
+          <article>
+            <h2>Receta 1</h2>
+            <p>Descripción de la receta</p>
+          </article>
+        </aside>
 
-                <article>
-                    <h2>Receta 2</h2>
-                    <p>Descripción de la receta</p>
-                </article>
-            </aside>
+        <aside class="recetasArticle">
+          <img
+            class="imgRecetas"
+            src="/img/arrozConPollo.jpg"
+            alt="Arroz con pollo"
+          />
 
-            <aside class="recetasArticle">
-                <img class="imgRecetas" src="/img/arrozConPollo.jpg" alt="Arroz con pollo">
+          <article>
+            <h2>Receta 2</h2>
+            <p>Descripción de la receta</p>
+          </article>
+        </aside>
 
-                <article>
-                    <h2>Receta 3</h2>
-                    <p>Descripción de la receta</p>
-                </article>
-            </aside>
+        <aside class="recetasArticle">
+          <img
+            class="imgRecetas"
+            src="/img/arrozConPollo.jpg"
+            alt="Arroz con pollo"
+          />
 
-        </section>
-
+          <article>
+            <h2>Receta 3</h2>
+            <p>Descripción de la receta</p>
+          </article>
+        </aside>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

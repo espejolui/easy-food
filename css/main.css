@@ -14,20 +14,72 @@
 
 /* Esta es la cabecera que trabaja, Julian, Victor y Camilo */
 .header{
-    /* Quitar color apenas termienen la configuración de estilos para la cabcera */
-    background-color: var(--green);
+   height: 120px;
+   align-items: center;
 }
 
 /* Aquí Ajejandra debe ingresar toddos los estilos de su parte */
 .container.recetas{
     display: grid;
-    background-color: violet;
+    width: 80%;
 }
 
 .recetasArticle{
     display: flex;
+    margin: .5rem 0;
+    border: 1px solid var(--white);
+    border-radius: 1rem;
 }
 
 .imgRecetas{
     width: 20%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+/* ======= estilos de los botones de inicio de sesión ========== */
+.buttonsContainer{
+  display: flex;
+}
+
+.login, 
+.signUp,
+#entrarAhora{
+  background-color: var(--orange);
+  width: 120px;
+  height: 30px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.formLoging{
+    display: none;
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    justify-content: center;
+    justify-items:center;
+    align-content: center;
+    border-radius: .5rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--shadow7);
+    z-index: 3;
+}
+
+.formLoging input{
+    width: 100%;
+    margin: .5rem auto;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--box);
+}
+
+.formLoging.active{
+    position: absolute;
+    display: grid;
+    top: 6rem;
+    left: 0;
+    right: 0;
 }
