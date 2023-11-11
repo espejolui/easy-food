@@ -1,14 +1,14 @@
 /* ==================== Import fonts ==================== */
 @font-face {
     font-family: 'parrafo';
-    src: url(/fonts/Montserrat/Montserrat-Regular.ttf);
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'title';
-    src: url(/fonts/Montserrat/Montserrat-Black.ttf);
+    src: url(fonts/Montserrat/Montserrat-Black.ttf);
     font-weight: normal;
     font-style: normal;
 }
