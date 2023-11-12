@@ -1,14 +1,21 @@
 /* ==================== Import fonts ==================== */
 @font-face {
     font-family: 'parrafo';
-    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+    src: url(/fonts/Montserrat/Montserrat-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'title';
-    src: url(fonts/Montserrat/Montserrat-Black.ttf);
+    src: url(/fonts/Montserrat/Montserrat-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'subTitle';
+    src: url(/fonts/Montserrat/Montserrat-Medium.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -22,8 +29,6 @@
     --green: #32DA43;
     --shadow3: rgba(0, 0, 0, 0.3);
     --shadow7: rgba(0, 0, 0, 0.7);
-    --fontParrafo: 'parrafo';
-    --fontTitle: 'title';
 }
 
 /* Color de selección del contenido */
@@ -47,7 +52,7 @@ body {
     width: 100%;
     height: auto;
     font-size: 100%;
-    font-family: var(--fontParrafo);
+    font-family: 'parrafo';
     color: var(--white);
     background-color: var(--black);
 }

@@ -1,123 +1,119 @@
-.main{
-    width: 100%;
+/* Estlos compartidos en el main y otros que se pueden reutilizar*/
+.main {
+  width: 100%;
 }
 
-/* No cambiar esto es el formato de los contenedores */
-.container{
-    display: flex;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
+/* No cambiar, esto es el formato de los contenedores */
+.container {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fontTitle{
+  font-family: 'title';
+  font-size: 2rem;
+}
+
+.fontSubTitle{
+  font-family: 'subTitle';
+  font-size: 2rem;
 }
 
 /* Esta es la cabecera que trabaja, Julian, Victor y Camilo */
-.header{
-   height: 120px;
-   align-items: center;
+.header {
+  height: 120px;
+  align-items: center;
 }
 
 /* Aquí Ajejandra debe ingresar toddos los estilos de su parte */
-
-.parrafo_articulo{
-    text-align:justify;
+.container.recetas {
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
-  .icon-list {
-    list-style: none; 
-    padding-left: 20px;
-    margin-right: 15px;
-  }
-
-  .icon-list li {
-    list-style: none;
-    position: relative;
-    padding-left: 40px; 
-    margin-bottom: 10px; 
-  }
-
-  
-  .icon-list p {
-    margin: 0;
-  }
-
-  
-  .icon-list img {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; 
-    height: 20px;
-  }
-
-.article-font{
-    text-align: center;
-    margin-bottom: 5px;
-}
-  
-.container.recetas{
-    display: grid;
-    width: 80%;
-}
-
-.recetasArticle{
-    display: flex;
-    margin: .5rem 0;
-    border: 1px solid var(--white);
-    border-radius: 1rem;
-}
-
-.imgRecetas{
-    width: 20%;
-    border-radius: 1rem 0 0 1rem;
-}
-
-/* ======= estilos de los botones de inicio de sesión ========== */
-.buttonsContainer{
+.recetasArticle {
   display: flex;
+  width: 100%;
+  margin: 1rem auto;
+  border: 1px solid var(--white);
+  border-radius: 1rem;
 }
 
-.login, 
-.signUp,
-#entrarAhora{
-  background-color: var(--orange);
-  width: 120px;
-  height: 30px;
-  border-radius: 5rem;
+.recetasArticle img {
+  width: 40%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.recetasArticle aside{
+  width: 60%;
+  padding: 1rem 2rem;
+  justify-content: start;
+  text-align: justify;
+}
+
+#receta1,
+#receta2
+#receta3{
+  line-height: 22px;
   cursor: pointer;
 }
 
-.formLoging{
-    display: none;
-    width: 60%;
-    height: 400px;
-    margin: auto;
-    justify-content: center;
-    justify-items:center;
-    align-content: center;
-    border-radius: .5rem;
-    text-align: center;
-    color: var(--white);
-    background-color: var(--shadow7);
-    z-index: 3;
+/* ======= estilos de los botones de inicio de sesión ========== */
+.buttonsContainer {
+  display: flex;
 }
 
-.formLoging input{
-    width: 100%;
-    margin: .5rem auto;
-    padding: .5rem;
-    border-radius: .5rem;
-    text-align: center;
-    color: var(--black);
-    background-color: var(--box);
+/* Estilo de los botones */
+.styleButtons {
+  display: flex;
+  width: 100%;
+  min-width: 120px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: var(--orange);
 }
 
-.formLoging.active{
-    position: absolute;
-    display: grid;
-    top: 6rem;
-    left: 0;
-    right: 0;
+/* Estilo del formulario de inicio de sesión */
+.formLoging {
+  display: none;
+  width: 60%;
+  height: 400px;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--shadow7);
+  z-index: 3;
+}
+
+/* Estlo de los input del formulario de inicio de sesión */
+.formLoging input {
+  width: 100%;
+  margin: .5rem auto;
+  padding: .5rem;
+  border-radius: .5rem;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--box);
+}
+
+/* posición del formulario al dar click en el botón de ingresar */
+.formLoging.active {
+  position: absolute;
+  display: grid;
+  top: 6rem;
+  left: 0;
+  right: 0;
 }

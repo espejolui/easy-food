@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Easy Food</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script async defer src="js/main.js"></script>
-    <script src="js/card.js"></script>
-  </head>
 
-  <body>
-    <main class="main">
-      <header class="container header">
-        <h1>Easy Food</h1>
-        <p>aquí va el menú de Victor y Camilo
-            Tambien va el input para buscar de Julian
-        </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Food</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Si ponen el js acá deben poner el async y el defer -->
+  <script async defer src="js/main.js"></script>
+  <script async defer src="js/card.js"></script>
+</head>
 
-        <!-- Funcionalidad para botón de inicio de sesión -->
-        <form action="" class="formLoging">
-            <input type="text" placeholder="Usuario">
-            <input type="text" placeholder="Contraseña">
-            <button type="submit" id="entrarAhora">Entrar ahora</button>
-        </form>
+<body>
+  <main class="main">
+    <header class="container header">
+      <h1 class="fontTitle">Easy Food</h1>
+      <p>
+        aquí va el menú de Victor y Camilo Tambien va el input para buscar de
+        Julian
+      </p>
 
-        <aside class="buttonsContainer">
-          <button type="button" class="login">Entrar</button>
-          <button type="button" class="signUp">Registrarse</button>
+      <!-- menú de inicio de sesión -->
+      <form action="#" class="formLoging">
+        <input type="text" placeholder="Usuario">
+        <input type="text" placeholder="Contraseña">
+        <button type="submit" class="styleButtons">Entrar ahora</button>
+      </form>
+
+      <!-- Botones para iniciar sesión y registrarse  -->
+      <aside class="buttonsContainer">
+        <button type="button" class="styleButtons login">Entrar</button>
+        <button type="button" class="styleButtons signUp">Registrarse</button>
+      </aside>
+    </header>
+
+    <!-- Contenedor de las recetas -->
+    <section class="container recetas">
+
+      <h2 class="fontTitle">Organiza calendaio semanal y no pierdas tiempo</h2>
+
+      <!-- Div receta 1 -->
+      <div class="recetasArticle" onclick="cambiarTexto()">
+        <img src="/img/ajiaco1.png" alt="Ajiaco">
+        <aside>
+          <h3 class="fontSubTitle">Ajiaco</h3>
+          <p id="receta1"><strong>Ingredientes para 6 personas:</strong> 400 g patata criollas (o monalisa), 250 g
+            patata pastusas (o kennebec), 2 g cebolleta, 0.5 pollo, 1 ramita de cilantro fresco, 1 manojo de guascas
+            (hierbas), 3 dientes de ajo triturados, caldo de pollo, 300 g maíz cocido en granos, 1 aguazarte cortado en
+            láminas, 1 puñado de alcaparras, 1 taza de crema de leche, sal y pimienta negra molida.
+          </p>
         </aside>
-      </header>
+      </div>
 
-      <section class="container recetas" >
-        <div class="recetasArticle card1" onclick="cambiarTexto()">
-          <img
-            class="imgRecetas"
-            src="img/ajiaco.jpeg"
-            alt="Arroz con pollo"
-          />
-          <article>
-            <h2 class="article-font">Ajiaco</h2>
-            <ul class="icon-list">
-              <li>
-                <img src="img/sombreroCocinero.png" alt="sombrero">
-                <p id="receta1" class="parrafo_articulo">Ingredientes para 6 personas. 400 g patata criollas (o monalisa), 250 g patata pastusas (o kennebec), 2 g cebolleta, 0.5 pollo, 1 ramita de cilantro fresco, 1 manojo de guascas (hierbas), 3 dientes de ajo triturados, caldo de pollo, 300 g maíz cocido en granos, 1 aguazarte cortado en láminas, 1 puñado de alcaparras, 1 taza de crema de leche, sal y pimienta negra molida.</p>
-              </li>
-              <li>
-            </ul>
-          </article>
-        </div>
+       <!-- Div receta 2 -->
+      <div class="recetasArticle" onclick="cambiarTexto2()">
+        <img src="/img/empanadas1.png" alt="Empanadas">
+        <aside>
+          <h3 class="fontSubTitle">Empanadas</h3>
+          <p id="receta2"><strong>Ingredientes para 6 personas:</strong> 275 g harina de maíz precocida blanca, 365 ml agua, 6 g sal, 2 hebras de azafrán, aceite de girasol para estirar la masa, 400 g carne picada de ternera para el relleno, 1 cebolla pequeña para el relleno, 1 pimiento verde italiano para el relleno, 0.5 pimiento rojo para el relleno, 2 cucharadas de salsa de tomate para el relleno, 2 cucharada de aceite de oliva para el relleno, 1 pimiento dulce para el relleno, 1 cebolla en polvo para el relleno, cilantro fresco varias hojas picadas, sal y pimienta negra molida.</p>
+        </aside>
+      </div>
 
-        <div class="recetasArticle" onclick="cambiarTexto2()">
-          <img
-            class="imgRecetas"
-            src="img/empanadas.jpeg"
-            alt="Arroz con pollo"
-          />
-          <article>
-            <h2 class="article-font">Empanadas</h2>
-            <ul class="icon-list">
-              <li>
-                <img src="img/sombreroCocinero.png" alt="sombrero">
-                <p id="receta2" class="parrafo_articulo">Ingredientes para 6 personas. 275 g harina de maíz precocida blanca, 365 ml agua, 6 g sal, 2 hebras de azafrán, aceite de girasol para estirar la masa, 400 g carne picada de ternera para el relleno, 1 cebolla pequeña para el relleno, 1 pimiento verde italiano para el relleno, 0.5 pimiento rojo para el relleno, 2 cucharadas de salsa de tomate para el relleno, 2 cucharada de aceite de oliva para el relleno, 1 pimiento dulce para el relleno, 1 cebolla en polvo para el relleno, cilantro fresco varias hojas picadas, sal y pimienta negra molida.</p>
-              </li>
-              <li>
-            </ul>
-          </article>
-        </div>
-        <div class="recetasArticle" onclick="cambiarTexto3()">
-          <img
-            class="imgRecetas"
-            src="img/bandejaPaisa.jpeg"
-            alt="Arroz con pollo"
-          />
-          <article>
-            <h2 class="article-font">Bandeja paisa</h2>
-            <ul class="icon-list">
-              <li>
-                <img src="img/sombreroCocinero.png" alt="sombrero">
-                <p id="receta3" class="parrafo_articulo">ingredientes: La bandeja paisa es un plato colombiano que incluye frijoles rojos, arroz blanco, carne, chicharrón (tocino frito), huevo frito, aguacate, plátano maduro frito, chorizo, hogao (salsa colombiana hecha con cebolla, tomate, ajo y especias) y arepa (tradicionalmente de maíz).</p>
-              </li>
-              <li>
-            </ul>
-          </article>
-        </div>
-      </section>
-    </main>
-  </body>
+       <!-- Div receta 3 -->
+      <div class="recetasArticle" onclick="cambiarTexto3()">
+        <img src="/img/arrozConPollo1.png" alt="Imagen de arroz con pollo">
+        <aside>
+          <h3 class="fontSubTitle">Arroz con pollo</h3>
+          <p id="receta3"><strong>ingredientes:</strong> La bandeja paisa es un plato colombiano que incluye frijoles rojos, arroz blanco, carne, chicharrón (tocino frito), huevo frito, aguacate, plátano maduro frito, chorizo, hogao (salsa colombiana hecha con cebolla, tomate, ajo y especias) y arepa (tradicionalmente de maíz).</p>
+        </aside>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
 </html>
