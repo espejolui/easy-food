@@ -28,13 +28,22 @@
 .header {
   height: 120px;
   align-items: center;
+  
 }
+
 
 /* Aquí Ajejandra debe ingresar toddos los estilos de su parte */
 .container.recetas {
   display: grid;
   justify-content: center;
   text-align: center;
+}
+#buscar{
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
 }
 
 .recetasArticle {
