@@ -7,11 +7,8 @@
 .container {
   display: flex;
   width: 90%;
-  height: auto;
   margin: auto;
   justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
 }
 
 .fontTitle{
@@ -28,9 +25,35 @@
 .header {
   height: 120px;
   align-items: center;
-  
+  margin-bottom: 3rem;
 }
 
+.ulMenuPrincipal{
+  display: flex;
+}
+
+.ulMenuPrincipal li{
+  margin: 0 1rem;
+}
+
+.desplegable{
+  position: relative;
+  cursor: pointer;
+}
+
+.listUp{
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+.desplegable:hover .listUp{
+  display: grid;
+}
+
+.listUp li{
+  margin: 0;
+}
 
 /* Aquí Ajejandra debe ingresar toddos los estilos de su parte */
 .container.recetas {
