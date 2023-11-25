@@ -1,61 +1,112 @@
-
 /* Estlos compartidos en el main y otros que se pueden reutilizar*/
 .main {
-  width: 70%;
+  width: 100%;
 }
 
 /* No cambiar, esto es el formato de los contenedores */
 .container {
   display: flex;
   width: 90%;
-  max-width: 1000px;
   margin: auto;
   justify-content: space-between;
-  
 }
 
-.fontTitle{
+.fontTitle {
   font-family: 'title';
   font-size: 2rem;
 }
 
-.fontSubTitle{
+.fontSubTitle {
   font-family: 'subTitle';
   font-size: 2rem;
 }
 
 /* Esta es la cabecera que trabaja, Julian, Victor y Camilo */
-.header {
-  height: 120px;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.ulMenuPrincipal{
-  display: flex;
-}
-
-.ulMenuPrincipal li{
-  margin: 0 1rem;
-}
-
-.desplegable{
+.container.header {
   position: relative;
-  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
 }
 
-.listUp{
-  position: absolute;
-  display: none;
-  z-index: 1;
-}
-
-.desplegable:hover .listUp{
+.nav {
   display: grid;
+  margin: auto;
 }
 
-.listUp li{
-  margin: 0;
+.containerHam {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 50px;
+}
+
+.ham {
+  display: grid;
+  width: 50%;
+  height: 40px;
+  justify-content: right;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.ham span {
+  background-color: black;
+  height: .4rem;
+  width: 2.5rem;
+  border-radius: 1rem;
+  transition: all .5s ease-in-out;
+}
+
+.menuOptions {
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+
+@keyframes showMenu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showMenu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.menuOptions.activado {
+  display: grid;
+  animation: showMenu .5s ease-in-out both;
+}
+
+.br1.animado {
+  transform: rotate(-45deg) translate(0, 18px);
+  transition: all .5s;
+}
+
+.br2.animado {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.br3.animado {
+  transform: rotate(45deg) translate(0, -18px);
+  transition: all .5s;
 }
 
 /* Aquí Ajejandra debe ingresar toddos los estilos de su parte */
@@ -64,7 +115,8 @@
   justify-content: center;
   text-align: center;
 }
-#buscar{
+
+#buscar {
   color: var(--black);
   background-color: var(--white);
   border-radius: 5rem;
@@ -85,7 +137,7 @@
   border-radius: 1rem 0 0 1rem;
 }
 
-.recetasArticle aside{
+.recetasArticle aside {
   width: 60%;
   padding: 1rem 2rem;
   justify-content: start;
@@ -93,8 +145,7 @@
 }
 
 #receta1,
-#receta2
-#receta3{
+#receta2 #receta3 {
   line-height: 22px;
   cursor: pointer;
 }

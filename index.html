@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Easy Food</title>
+  <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- Si ponen el js acá deben poner el async y el defer -->
@@ -17,53 +18,25 @@
 
     <!-- INICIO del menú -->
     <header class="container header">
+      <img id="logo" src="/img/logo.svg" alt="Logo EasyFood">
       <h1 class="fontTitle">Easy Food</h1>
 
-      <form action="#">
-        <input type="text" placeholder="buscar" id="buscar">
-      </form>
+      <nav class="nav">
+        <div class="containerHam">
+          <img id="logoSkepper" src="logo_skepper.svg" alt="">
+          <button class="ham" type="button" title="ham">
+            <span class="br1"></span>
+            <span class="br2"></span>
+            <span class="br3"></span>
+          </button>
+        </div>
 
-      <nav id="menuPincipal">
-        <ul class="ulMenuPrincipal">
-          <li><a href="#">Feed</a></li>
-          <li class="desplegable">Perfil
-            <ol class="listUp">
-              <li><a href="#">Amigos</a></li>
-              <li><a href="#">Calendario</a></li>
-              <li><a href="#">Configuración</a></li>
-            </ol>
-          </li>
-          <li class="desplegable">Recetas
-            <ol class="listUp">
-              <li><a href="#">Primarias</a></li>
-            </ol>
-          </li>
-
-          <li><a href="#">Categegrías</a></li>
-            <ol>
-              <li>Prueba</li>
-            </ol>
-          <li><a href="#">Términos</a></li>
+        <ul class="menuOptions">
+          <li><a href="#">Categrías</a></li>
+          <li><a href="#">Comidas</a></li>
+          <li><a href="#">Comidas</a></li>
         </ul>
       </nav>
-
-      <!-- menú de inicio de sesión -->
-      <form action="#" class="formLoging">
-        <input type="text" placeholder="Usuario">
-        <input type="text" placeholder="Contraseña">
-        <button type="submit" class="styleButtons">Entrar ahora</button>
-      </form>
-
-      <!-- Botones para iniciar sesión y registrarse  -->
-      <aside class="buttonsContainer">
-        <button type="button" class="styleButtons login">Entrar</button>
-        <button type="button" class="styleButtons signUp">Registrarse</button>
-      </aside>
-
-      <!-- INICIO Aaquí hace el menú Victor y Camilo -->
-      
-
-      <!-- FIN Aaquí hace el menú Victor y Camilo -->
     </header>
     <!-- FIN del menú -->
 
