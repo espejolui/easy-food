@@ -1,14 +1,17 @@
+
 /* Estlos compartidos en el main y otros que se pueden reutilizar*/
 .main {
-  width: 100%;
+  width: 70%;
 }
 
 /* No cambiar, esto es el formato de los contenedores */
 .container {
   display: flex;
   width: 90%;
+  max-width: 1000px;
   margin: auto;
   justify-content: space-between;
+  
 }
 
 .fontTitle{
@@ -25,7 +28,7 @@
 .header {
   height: 120px;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .ulMenuPrincipal{
