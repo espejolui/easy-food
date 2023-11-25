@@ -21,92 +21,12 @@
   font-size: 2rem;
 }
 
-/* Esta es la cabecera que trabaja, Julian, Victor y Camilo */
-.container.header {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  background-color: orange;
-}
-
-.nav {
-  display: grid;
-  margin: auto;
-}
-
-.containerHam {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo {
-  width: 50px;
-}
-
-.ham {
-  display: grid;
-  width: 50%;
-  height: 40px;
-  justify-content: right;
-  align-items: center;
-  border: none;
-  background-color: transparent;
-}
-
-.ham span {
-  background-color: black;
-  height: .4rem;
-  width: 2.5rem;
-  border-radius: 1rem;
-  transition: all .5s ease-in-out;
-}
-
-.menuOptions {
-  display: grid;
-  width: 100%;
-  align-items: center;
-}
-
-@keyframes showMenu {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes showMenu {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.menuOptions.activado {
-  display: grid;
-  animation: showMenu .5s ease-in-out both;
-}
-
-.br1.animado {
-  transform: rotate(-45deg) translate(0, 18px);
-  transition: all .5s;
-}
-
-.br2.animado {
-  opacity: 0;
-  transition: all 0.4s;
-}
-
-.br3.animado {
-  transform: rotate(45deg) translate(0, -18px);
-  transition: all .5s;
+#buscar {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
 }
 
 /* Aquí Ajejandra debe ingresar toddos los estilos de su parte */
@@ -114,14 +34,6 @@
   display: grid;
   justify-content: center;
   text-align: center;
-}
-
-#buscar {
-  color: var(--black);
-  background-color: var(--white);
-  border-radius: 5rem;
-  padding: .5rem 1rem;
-  cursor: pointer;
 }
 
 .recetasArticle {
@@ -145,7 +57,7 @@
 }
 
 #receta1,
-#receta2 #receta3 {
+#receta2, #receta3 {
   line-height: 22px;
   cursor: pointer;
 }
@@ -169,7 +81,8 @@
 }
 
 /* Estilo del formulario de inicio de sesión */
-.formLoging {
+.formLogin,
+.formSignUp {
   display: none;
   width: 60%;
   height: 400px;
@@ -185,7 +98,8 @@
 }
 
 /* Estlo de los input del formulario de inicio de sesión */
-.formLoging input {
+.formLogin input,
+.formSignUp input {
   width: 100%;
   margin: .5rem auto;
   padding: .5rem;
@@ -196,10 +110,16 @@
 }
 
 /* posición del formulario al dar click en el botón de ingresar */
-.formLoging.active {
+.formLogin.active,
+.formSignUp.active {
   position: absolute;
   display: grid;
   top: 6rem;
   left: 0;
   right: 0;
+}
+
+/* Contenedor de los botones de los formularios de inicio de sesión */
+.botonesPopUp{
+  display: flex;
 }

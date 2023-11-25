@@ -1,0 +1,105 @@
+/* ========== menu ========== */
+/* Contenedor general del menú */
+.menuContent {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 120px;
+}
+
+/* Secciones del menú principal */
+.menuMain {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contenedor de logo */
+.logo {
+    display: flex;
+    width: 30%;
+}
+
+.logo img {
+    width: 12%;
+}
+
+/* Botón que guarda las barras de la hamburguesa del menú*/
+.ham {
+    position: fixed;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    top: 2rem;
+    right: 4%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.ham span {
+    width: 40px;
+    height: 7px;
+    margin: 2px auto;
+    border-radius: 1rem;
+    background-color: var(--orange);
+    transition: all 0.5s ease-in-out;
+}
+
+.br1.animado,
+.br3.animado {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: var(--black);
+    transition: all .5s;
+}
+
+.br1.animado {
+    transform: rotate(-45deg);
+}
+
+.br3.animado {
+    transform: rotate(45deg);
+}
+
+.br2.animado {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.menuOptions {
+    display: none;    
+}
+
+.menuTitle{
+    margin: 0 1rem;
+}
+
+.menuSubTitles{
+    margin-top: .5rem;
+}
+
+.menuOptions.activado {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding-top: 90px;
+    padding-right: 5%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: right;
+    align-content: start;
+    text-align: start;
+    color: var(--black);
+    background-color: var(--white);
+    animation: showMenu 0.3s ease-in-out both;
+}

@@ -8,7 +8,8 @@
   <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <!-- Si ponen el js acá deben poner el async y el defer -->
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <!-- Si se pone el js acá se debe poner el async y el defer para que cargue después del documento-->
   <script async defer src="js/main.js"></script>
   <script async defer src="js/card.js"></script>
 </head>
@@ -17,33 +18,90 @@
   <main class="main">
 
     <!-- INICIO del menú -->
-    <header class="container header">
-      <img id="logo" src="/img/logo.svg" alt="Logo EasyFood">
-      <h1 class="fontTitle">Easy Food</h1>
+    <header class="menuContent">
+      <nav class="menuMain">
+        <figure class="logo">
+          <img src="/img/logo.svg" alt="Logo EasyFood">
+          <h1 class="fontTitle">Easy Food</h1>
+        </figure>
 
-      <nav class="nav">
-        <div class="containerHam">
-          <img id="logoSkepper" src="logo_skepper.svg" alt="">
+        <form action="#">
+          <input type="text" placeholder="buscar" id="buscar">
+        </form>
+
+        <!-- menú de inicio de sesión -->
+        <form action="#" class="formLogin">
+          <input type="text" placeholder="Usuario">
+          <input type="text" placeholder="Contraseña">
+          <div class="botonesPopUp">
+            <button type="submit" class="styleButtons">Entrar ahora</button>
+            <button type="submit" class="styleButtons cancel">Cancelar</button>
+          </div>
+        </form>
+
+
+        <!-- menú de inicio de sesión -->
+        <form action="#" class="formSignUp">
+          <input type="text" placeholder="Aignar usuario">
+          <input type="text" placeholder="Crear contraseña">
+          <div class="botonesPopUp">
+            <button type="submit" class="styleButtons">Crear cuenta</button>
+            <button type="submit" class="styleButtons cancel">Cancelar</button>
+          </div>
+        </form>
+
+        <!-- Botones para iniciar sesión y registrarse  -->
+        <aside class="buttonsContainer">
+          <button type="button" class="styleButtons login">Entrar</button>
+          <button type="button" class="styleButtons signUp">Registrarse</button>
+        </aside>
+
+        <!-- Menú responsivo con JS -->
+        <div class="containerMenuOptios">
           <button class="ham" type="button" title="ham">
             <span class="br1"></span>
             <span class="br2"></span>
             <span class="br3"></span>
           </button>
+          <ul class="menuOptions">
+            <li class="menuTitle">
+              <a href="#">Feed</a>
+            </li>
+
+            <li class="menuTitle">Recetas
+              <ol class="menuSubTitles">
+                <li><a href="#">Primarias</a></li>
+              </ol>
+            </li>
+
+            <li class="menuTitle"> Categorías
+              <ol class="menuSubTitles">
+                <li><a href="#">Internacionales</a></li>
+                <li><a href="#">Nacionales</a></li>
+              </ol>
+            </li>
+
+            <li class="menuTitle">Perfil
+              <ol class="menuSubTitles">
+                <li><a href="#">Amigos</a></li>
+                <li><a href="#">Calendario</a></li>
+                <li><a href="#">Configuraciones</a></li>
+              </ol>
+            </li>
+
+          </ul>
+
         </div>
 
-        <ul class="menuOptions">
-          <li><a href="#">Categrías</a></li>
-          <li><a href="#">Comidas</a></li>
-          <li><a href="#">Comidas</a></li>
-        </ul>
       </nav>
+
     </header>
     <!-- FIN del menú -->
 
     <!-- Contenedor de las recetas -->
     <section class="container recetas">
 
-      <h2 class="fontTitle">Organiza calendaio semanal y no pierdas tiempo</h2>
+      <h2 class="fontTitle">Organiza calendario semanal y no pierdas tiempo</h2>
 
       <!-- Div receta 1 -->
       <div class="recetasArticle" onclick="cambiarTexto()">
