@@ -8,6 +8,6 @@ Esta es solo una pequeña maquetación de la aplicación que construiremos como 
 
 ## Autores:
 - Luis Herrera
-- Alejandra Yepes
-- Julian Bedoya
-- Camilo Bolivar
+- [Alejandra Yepes](https://github.com/SrAle11)
+- [Julian Bedoya](https://github.com/julianbedoya1995)
+- [Camilo Bolivar](https://github.com/RogerCBB)
