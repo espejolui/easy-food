@@ -7,7 +7,7 @@ Esta es solo una pequeña maquetación de la aplicación que construiremos como 
 2023
 
 ## Autores:
-- Luis Herrera
+- [Luis Herrera](https://github.com/espejolui)
 - [Alejandra Yepes](https://github.com/SrAle11)
 - [Julian Bedoya](https://github.com/julianbedoya1995)
 - [Camilo Bolivar](https://github.com/RogerCBB)
